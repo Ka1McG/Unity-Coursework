@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 41
+  controlID: 100
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -448,14 +448,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\user\Desktop\Blitzz
+  m_LastProjectPath: C:\Users\user\Desktop\Blitz
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a640000
-    m_LastClickedID: 25642
-    m_ExpandedIDs: 00000000186400001a6400001c6400001e64000020640000226400002464000026640000286400002a6400002c640000
+    scrollPos: {x: 0, y: 172}
+    m_SelectedIDs: 7a640000
+    m_LastClickedID: 25722
+    m_ExpandedIDs: 00000000686400006a6400006c6400006e64000070640000726400007464000076640000786400007a6400007c64000092640000b0640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,7 +483,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000186400001a6400001c6400001e64000020640000226400002464000026640000286400002a6400002c640000
+    m_ExpandedIDs: 00000000686400006a6400006c6400006e64000070640000726400007464000076640000786400007a6400007c640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,9 +627,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: f8e1ffff5cf9fffff8610000
+      m_SelectedIDs: 1a6a0000
+      m_LastClickedID: 27162
+      m_ExpandedIDs: eaf1ffff2cf6ffff24fbffffd0610000b66700007a680000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -766,13 +766,13 @@ MonoBehaviour:
       size: {x: 0, y: 0}
       sizeOverridden: 0
     - dockPosition: 0
-      containerId: overlay-container--right
-      floating: 0
+      containerId: Floating
+      floating: 1
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 67.5, y: 86}
+      snapOffset: {x: -100, y: 23}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: Orientation
       index: 0
       layout: 4
@@ -1051,9 +1051,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -40.661312, y: 3.6809177, z: -30.190914}
+    m_Target: {x: 960, y: 540, z: 0}
     speed: 2
-    m_Value: {x: -40.661312, y: 3.6809177, z: -30.190914}
+    m_Value: {x: 960, y: 540, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1099,13 +1099,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.206
   m_Rotation:
-    m_Target: {x: 0.099463955, y: 0.81227696, z: -0.14529343, w: 0.5560618}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.09946387, y: 0.8122763, z: -0.14529331, w: 0.5560613}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 538.83136
     speed: 2
-    m_Value: 12.124355
+    m_Value: 564.2213
   m_Ortho:
     m_Target: 0
     speed: 2
