@@ -30653,11 +30653,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!54 &1294848145 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1781799129959184178, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-  m_PrefabInstance: {fileID: 4475820561572821920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1300663866
 GameObject:
   m_ObjectHideFlags: 0
@@ -49887,50 +49882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerContainer
       objectReference: {fileID: 0}
-    - target: {fileID: 34111507031106363, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 597662570769876059, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: slideSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 7693221204355599124, guid: 223bea3d8ed03f64d8503fd42815d46a, type: 3}
-    - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: playerRb
-      value: 
-      objectReference: {fileID: 1294848145}
-    - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: shootForce
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
       propertyPath: ammoDisplay
       value: 
       objectReference: {fileID: 800876584}
-    - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: muzzleFlash
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: recoilForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 835909767998343124, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: timeBetweenShots
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142104666722727219, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: sensX
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142104666722727219, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
-      propertyPath: sensY
-      value: 500
-      objectReference: {fileID: 0}
     - target: {fileID: 8603631999461227023, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48
