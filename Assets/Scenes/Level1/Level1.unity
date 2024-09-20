@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -29044,11 +29044,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4142104666722727219, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
       propertyPath: sensX
-      value: 800
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4142104666722727219, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
       propertyPath: sensY
-      value: 800
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5934021232695467283, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
       propertyPath: whatIsWall.m_Bits
@@ -29105,8 +29105,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7063042920883410398, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 712597413}
   m_SourcePrefab: {fileID: 100100000, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
+--- !u!1 &712597412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7063042920883410398, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
+  m_PrefabInstance: {fileID: 712597411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &712597413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712597412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5ae58ccd9a7444887bdbd1fb864463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelTime: 0
+  levelRank: 
+  score: 0
+  finishedLevel: 0
 --- !u!43 &713799697
 Mesh:
   m_ObjectHideFlags: 0
@@ -32150,7 +32174,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32174
+  m_Name: pb_Mesh28914
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -32320,7 +32344,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33028
+  m_Name: pb_Mesh25980
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -68150,6 +68174,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   health: 0
+  maxHealth: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 0.5

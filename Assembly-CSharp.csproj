@@ -59,7 +59,7 @@
     <UnityVersion>2023.1.12f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\user\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\user\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.1.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.1.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -67,13 +67,19 @@
     <Compile Include="Assets\Scripts\EnemyNPCs\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Player Movement\Dashing.cs" />
     <Compile Include="Assets\Scripts\Environment\DoorScript.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\DB.cs" />
     <Compile Include="Assets\Scripts\Combat\CustomBullet.cs" />
     <Compile Include="Assets\Scripts\Player Movement\PlayerCam.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\PlayerDatabase.cs" />
     <Compile Include="Assets\Scifi-Gun\ReadMe.cs" />
     <Compile Include="Assets\Scripts\Player Movement\Movement.cs" />
     <Compile Include="Assets\Scripts\Player Movement\Sliding.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MoveCamera.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\MenuScene.cs" />
     <Compile Include="Assets\Scripts\Combat\ProjectileSystem.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\PlayerDatabaseService.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\StatManager.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\EndingTrigger.cs" />
     <Compile Include="Assets\Scripts\GUI+Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player Movement\WallRunningCheck.cs" />
   </ItemGroup>
