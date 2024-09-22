@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class MainMenu : MonoBehaviour
 {
@@ -16,9 +17,58 @@ public class MainMenu : MonoBehaviour
     public GameObject LoginObject;
     public GameObject MainMenuObject;
 
+    [Header("Menus")]
+    public GameObject HUD;
+    public GameObject EscapeMenu;
+    public KeyCode escapeKey = KeyCode.G;
+
+    private void Update() 
+    {
+        //Controls for the menu
+        if (Input.GetKeyDown(escapeKey))
+        {
+            if(HUD.activeSelf)
+            {
+                PauseGame();
+            }
+            else
+            {
+                UnPauseGame();
+            }
+        }
+    }
+
+    public void PauseGame()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0;
+        HUD.SetActive(false);
+        EscapeMenu.SetActive(true);
+    }
+
+    public void UnPauseGame()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        HUD.SetActive(true);
+        EscapeMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
+    }
+
+    public void TestGame()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
     }
 
     public void QuitGame()

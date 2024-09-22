@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34111507031106363}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -48, y: 0, z: -38.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -381,8 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98199df247d9db94f88793cd84972cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 150
-  sensY: 150
+  sensX: 800
+  sensY: 800
   orientation: {fileID: 7700377750126632917}
   CameraHolder: {fileID: 2575360239142556548}
 --- !u!1 &7063042920883410398
@@ -774,20 +774,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71657a45e4932a64e810eaca39a8db8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  bullet: {fileID: 7693221204355599124, guid: 223bea3d8ed03f64d8503fd42815d46a, type: 3}
   shootForce: 100
   upwardForce: 0
   timeBetweenShooting: 0.5
   spread: 0
   reloadTime: 3
   timeBetweenShots: 1
-  magazineSize: 1000
+  magazineSize: 10
   BulletsPerTap: 1
   allowButtonHold: 0
-  playerRb: {fileID: 0}
-  recoilForce: 0
+  playerRb: {fileID: 1781799129959184178}
+  recoilForce: 5
   PlayerCam: {fileID: 3843837513844982377}
   attackPoint: {fileID: 3002345833598760934}
-  muzzleFlash: {fileID: 152034, guid: 097480f3f60bb9940ab46fb2357086fc, type: 3}
+  muzzleFlash: {fileID: 0}
   ammoDisplay: {fileID: 0}
   allowInvoke: 1
