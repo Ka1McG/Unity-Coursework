@@ -69,6 +69,7 @@ public class MainMenu : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadSceneAsync(0);
+        Time.timeScale = 1;
     }
 
     public void QuitGame()

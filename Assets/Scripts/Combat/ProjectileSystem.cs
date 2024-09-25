@@ -30,6 +30,7 @@ public class ProjectileSystem : MonoBehaviour
     //References
     public Camera PlayerCam;
     public Transform attackPoint;
+    private MainMenu mM;
 
     //Graphics
     public GameObject muzzleFlash;
