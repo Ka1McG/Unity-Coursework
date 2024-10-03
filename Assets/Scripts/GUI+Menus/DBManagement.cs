@@ -14,4 +14,13 @@ public class MenuScene : MonoBehaviour
     {
         playerDatabaseService.CreatePlayerInfoTable();
     }
+
+    public void onAddPlayerRanksButtonClick()
+    {
+        Ranks ranks = new Ranks
+        {
+            Email = "Mark",
+            Level1 = "A"
+        };
+    }
 }

@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 4350641893460295109}
   - component: {fileID: 1237762409606914692}
   - component: {fileID: 4325119546714531615}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glasses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7700377750126632917}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,9 +399,10 @@ GameObject:
   - component: {fileID: 4862956330544527102}
   - component: {fileID: 5934021232695467283}
   - component: {fileID: 3900744585361345204}
-  m_Layer: 0
+  - component: {fileID: 997698059993697481}
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -568,6 +569,22 @@ MonoBehaviour:
   dashFov: 95
   dashCd: 1.5
   dashKey: 304
+--- !u!114 &997698059993697481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7063042920883410398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d5ae58ccd9a7444887bdbd1fb864463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelTime: 0
+  levelRank: 
+  score: 0
+  finishedLevel: 0
 --- !u!1 &7251242911846620470
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8581552211492046148}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CameraPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
