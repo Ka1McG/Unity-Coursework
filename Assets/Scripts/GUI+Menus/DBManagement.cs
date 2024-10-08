@@ -1,26 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Internal.Builders;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class MenuScene : MonoBehaviour
+public class DBManagement : MonoBehaviour
 {
-    PlayerDatabaseService playerDatabaseService;
-    void Start()
+    //pdsp stands for "PlayerDatabaseService(Player)"
+    private PlayerDatabaseService pdsp = new PlayerDatabaseService("PlayerDatabase.db");
+    public void AddPlayerToPlayerDatabase()
     {
-        playerDatabaseService = new PlayerDatabaseService();
+        pdsp.CreatePlayerInPlayerDatabase();
     }
 
-    public void OnCreatePlayerInfoButtonClick()
-    {
-        playerDatabaseService.CreatePlayerInfoTable();
-    }
+//    public void UpdatePassword()
+//    {
+//        PlayerDatabase playerDatabase = new PlayerDatabase
+//        {
+//            PlayerID = 2,
+//            Email = "Markk",
+//            Password = "TestPassword",
+//            Username = "Jeff",
+//            PlayTime = 0,
+//            AverageRank = 0
+//        };
+//        int val = pdsp.UpdatePlayerPassword(playerDatabase);
+//    }
 
-    public void onAddPlayerRanksButtonClick()
-    {
-        Ranks ranks = new Ranks
-        {
-            Email = "Mark",
-            Level1 = "A"
-        };
-    }
+
 }

@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\EnemyNPCs\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Player Movement\Dashing.cs" />
     <Compile Include="Assets\Scripts\Environment\DoorScript.cs" />
-    <Compile Include="Assets\Scripts\GUI+Menus\DB.cs" />
     <Compile Include="Assets\Scripts\Combat\CustomBullet.cs" />
     <Compile Include="Assets\Scripts\Player Movement\PlayerCam.cs" />
     <Compile Include="Assets\Scripts\GUI+Menus\DBManagement.cs" />
@@ -76,13 +75,13 @@
     <Compile Include="Assets\Scripts\Player Movement\Movement.cs" />
     <Compile Include="Assets\Scripts\Player Movement\Sliding.cs" />
     <Compile Include="Assets\Scripts\Player Movement\MoveCamera.cs" />
-    <Compile Include="Assets\Scripts\GUI+Menus\DataBaseDefinitions\Ranks.cs" />
     <Compile Include="Assets\Scripts\Combat\ProjectileSystem.cs" />
     <Compile Include="Assets\Scripts\GUI+Menus\PlayerDatabaseService.cs" />
     <Compile Include="Assets\Scripts\GUI+Menus\StatManager.cs" />
     <Compile Include="Assets\Scripts\GUI+Menus\EndingTrigger.cs" />
     <Compile Include="Assets\Scripts\GUI+Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player Movement\WallRunningCheck.cs" />
+    <Compile Include="Assets\Scripts\GUI+Menus\DifficultyManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NavMeshComponents-master\ProjectSettings\ProjectVersion.txt" />

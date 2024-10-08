@@ -1569,7 +1569,12 @@ namespace SQLite4Unity3d
 				}
 			}
 		}
-	}
+
+        public IDisposable CreateCommand()
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 	/// <summary>
 	/// Represents a parsed connection string.

@@ -836,6 +836,8 @@ MonoBehaviour:
   passwordFieldInput: {fileID: 0}
   LoginObject: {fileID: 0}
   MainMenuObject: {fileID: 0}
+  ErrorPrompt: {fileID: 0}
+  LevelInfoText: {fileID: 0}
   HUD: {fileID: 1495124706}
   EscapeMenu: {fileID: 1425237861}
   escapeKey: 103
@@ -42546,7 +42548,7 @@ PrefabInstance:
     - target: {fileID: 2325008510187127099, guid: 4267241e110326e48ba5b32a1584725f, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1715482080}
     - target: {fileID: 2325008510187127099, guid: 4267241e110326e48ba5b32a1584725f, type: 3}
       propertyPath: maxHealth
       value: 10
@@ -42612,6 +42614,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4267241e110326e48ba5b32a1584725f, type: 3}
+--- !u!4 &1715482080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8603631999461227023, guid: 960a4038187a06e428fc826567e9dc40, type: 3}
+  m_PrefabInstance: {fileID: 864320854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1721256444
 GameObject:
   m_ObjectHideFlags: 0

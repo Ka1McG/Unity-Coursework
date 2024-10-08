@@ -5,17 +5,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 
 public class MainMenu : MonoBehaviour
 {
+    [Header("References")]
     public TMP_InputField emailFieldInput;
     public TMP_InputField passwordFieldInput;
     //set to private after testing
     private string inputtedEmail;
     private string inputtedPassword;
+    private bool successfulLogin;
 
     public GameObject LoginObject;
     public GameObject MainMenuObject;
+    public TMP_Text ErrorPrompt;
+    public TMP_Text LevelInfoText;
 
     [Header("Menus")]
     public GameObject HUD;
@@ -88,17 +93,32 @@ public class MainMenu : MonoBehaviour
 
     public void LogInCheck()
     {
+        var pds = new PlayerDatabaseService("PlayerDatabase.db");
         StoreInputs();
-        if(inputtedEmail == "gmac283")
+
+        if(inputtedEmail == "")
         {
-            Debug.Log("email's worked");
+            ErrorPrompt.text = "Please enter an email";
+        }
+        if(inputtedPassword == "")
+        {
+            ErrorPrompt.text = "Please enter a password";
+        }
+        if(inputtedEmail == "" && inputtedPassword == "")
+        {
+            ErrorPrompt.text = "Please fill in the boxes";
+        }
+
+        var p = pds.GetUser(inputtedEmail, inputtedPassword);
+        
+        if(p != null)
+        {
+            Debug.Log("Worked");
             SuccessfulLoginToMenu();
         }
         else
         {
-            {
-                Debug.Log("Email's not worked");
-            }
+            ErrorPrompt.text = "Incorrect email or password";
         }
     }
 
@@ -106,5 +126,11 @@ public class MainMenu : MonoBehaviour
     {
         LoginObject.SetActive(false);
         MainMenuObject.SetActive(true);
+    }
+
+    public void ClearText()
+    {
+        LevelInfoText.SetText("_____-_____-_____");
+        LevelInfoText.fontSize = 72;
     }
 }
